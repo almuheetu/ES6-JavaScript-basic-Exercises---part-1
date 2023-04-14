@@ -104,11 +104,20 @@ console.log(leapyear(100));
  
 // Problem #7:
 // Write a JavaScript program to find 1st January is being a Sunday between 2014 and 2050.
+                 
+console.log('--------------------');
+for (var year = 2014; year <= 2050; year++)
+    {
+    var d = new Date(year, 0, 1);
+    if ( d.getDay() === 0 )
+        console.log("1st January is being a Sunday  "+year);
+    }
+console.log('--------------------');
 
 
-Problem #8:
-Problem #9:
-Problem #10:
+// Problem #8:
+// Problem #9:
+// Problem #10:
 
 
 
