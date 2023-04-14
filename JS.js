@@ -116,7 +116,21 @@ console.log('--------------------');
 
 
 // Problem #8:
+// Write a JavaScript program where the program takes a random integer between 1 to 10, the user is then prompted to input a guess number. If the user input matches with guess number, the program will display a message "Good Work" otherwise display a message "Not matched"
+
+
+const num = Math.ceil(Math.random() * 10);
+console.log(num);
+ const gnum = prompt('Guess the number between 1 and 10 inclusive');
+ if (gnum == num)
+   console.log('Matched');
+  else
+   console.log('Not matched, the number was '+gnum);
+   
 // Problem #9:
+// Write a JavaScript program to calculate days left until next Christmas.
+
+
 // Problem #10:
 
 
