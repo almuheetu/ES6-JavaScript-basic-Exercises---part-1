@@ -32,15 +32,14 @@ if (hour === 0 && prepand === ' AM ') {
 }
 console.log("Current Time : " + hour + prepand + " : " + minute + " : " + second);
 
- //  problem #2:
- //  Write a JavaScript program to print the contents of the current window. 
+//  problem #2:
+//  Write a JavaScript program to print the contents of the current window. 
 
- function print_current_page()
- {
- window.print();
- }
+function print_current_page() {
+    window.print();
+}
 
- //  problem #3:
+//  problem #3:
 //  Write a JavaScript program to get the current date.
 var today = new Date();
 var dd = today.getDate();
@@ -64,7 +63,7 @@ today = dd + '/' + mm + '/' + yyyy;
 console.log(today);
 
 
- //  problem #4:
+//  problem #4:
 // Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7.
 var side1 = 5;
 var side2 = 6;
@@ -90,9 +89,8 @@ function animate_string(id) {
 // Problem #6:
 // Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar. 
 // Find Leap Year
-function leapyear(year)
-{
-return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
+function leapyear(year) {
+    return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
 }
 console.log(leapyear(2016));
 console.log(leapyear(2000));
@@ -101,17 +99,16 @@ console.log(leapyear(1800));
 console.log(leapyear(100));
 
 
- 
+
 // Problem #7:
 // Write a JavaScript program to find 1st January is being a Sunday between 2014 and 2050.
-                 
+
 console.log('--------------------');
-for (var year = 2014; year <= 2050; year++)
-    {
+for (var year = 2014; year <= 2050; year++) {
     var d = new Date(year, 0, 1);
-    if ( d.getDay() === 0 )
-        console.log("1st January is being a Sunday  "+year);
-    }
+    if (d.getDay() === 0)
+        console.log("1st January is being a Sunday  " + year);
+}
 console.log('--------------------');
 
 
@@ -121,17 +118,40 @@ console.log('--------------------');
 
 const num = Math.ceil(Math.random() * 10);
 console.log(num);
- const gnum = prompt('Guess the number between 1 and 10 inclusive');
- if (gnum == num)
-   console.log('Matched');
-  else
-   console.log('Not matched, the number was '+gnum);
-   
+const gnum = prompt('Guess the number between 1 and 10 inclusive');
+if (gnum == num)
+    console.log('Matched');
+else
+    console.log('Not matched, the number was ' + gnum);
+
 // Problem #9:
 // Write a JavaScript program to calculate days left until next Christmas.
 
+today = new Date();
+var cmas = new Date(today.getFullYear(), 11, 25);
+if (today.getMonth() == 11 && today.getDate() > 25) {
+    cmas.setFullYear(cmas.getFullYear() + 1);
+}
+// console.log(cmas)
+var one_day = 1000 * 60 * 60 * 24;
+console.log(Math.ceil((cmas.getTime() - today.getTime()) / (one_day)) +
+    " days left until Christmas!");
+
+
 
 // Problem #10:
+// Write a JavaScript program to calculate multiplication and division of two numbers (input from user).
 
+function multiplyBy() {
+    num1 = document.getElementById("firstNumber").value;
+    num2 = document.getElementById("secondNumber").value;
+    document.getElementById("result").innerHTML = num1 * num2;
+}
+
+function divideBy() {
+    num1 = document.getElementById("firstNumber").value;
+    num2 = document.getElementById("secondNumber").value;
+    document.getElementById("result").innerHTML = num1 / num2;
+}
 
 
