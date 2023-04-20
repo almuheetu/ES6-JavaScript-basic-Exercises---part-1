@@ -189,3 +189,44 @@ var var_name = 'abcd';
 var n = 120;
 this[var_name] = n;
 console.log(this[var_name])
+
+
+// Problem #14:
+// Write a JavaScript exercise to get the filename extension.
+
+filename = "system.php"
+console.log(filename.split('.').pop());
+filename = "abc.js"
+console.log(filename.split('.').pop());
+
+
+
+// Problem #15:
+// Write a JavaScript exercise to create a variable using a user-defined name.
+
+
+
+// Problem #16:
+// Write a JavaScript exercise to create a variable using a user-defined name.
+
+
+
+
+// Problem #17:
+// Write a JavaScript exercise to create a variable using a user-defined name.
+
+
+
+
+
+
+// Problem #18:
+// Write a JavaScript exercise to create a variable using a user-defined name.
+
+
+
+
+// Problem #13:
+// Write a JavaScript exercise to create a variable using a user-defined name.
+
+
