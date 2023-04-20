@@ -217,7 +217,19 @@ console.log(difference(11))
 
 
 // Problem #16:
-// Write a JavaScript exercise to create a variable using a user-defined name.
+//  Write a JavaScript program to compute the sum of the two given integers. If the two values are the same, then return triple their sum. 
+
+function sumTriple (x, y) {
+    if (x == y) {
+      return 3 * (x + y);
+      } 
+     else
+     {
+      return (x + y);
+     }
+   }
+  console.log(sumTriple(10, 20));
+  console.log(sumTriple(10, 10));
 
 
 
