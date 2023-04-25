@@ -157,21 +157,19 @@ function divideBy() {
 // Problem #11:
 // Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit.
 
-function cToF(celsius) 
-{
-  var cTemp = celsius;
-  var cToFahr = cTemp * 9 / 5 + 32;
-  var message = cTemp+'\xB0C is ' + cToFahr + ' \xB0F.';
+function cToF(celsius) {
+    var cTemp = celsius;
+    var cToFahr = cTemp * 9 / 5 + 32;
+    var message = cTemp + '\xB0C is ' + cToFahr + ' \xB0F.';
     console.log(message);
 }
 
-function fToC(fahrenheit) 
-{
-  var fTemp = fahrenheit;
-  var fToCel = (fTemp - 32) * 5 / 9;
-  var message = fTemp+'\xB0F is ' + fToCel + '\xB0C.';
+function fToC(fahrenheit) {
+    var fTemp = fahrenheit;
+    var fToCel = (fTemp - 32) * 5 / 9;
+    var message = fTemp + '\xB0F is ' + fToCel + '\xB0C.';
     console.log(message);
-} 
+}
 cToF(60);
 fToC(45);
 
@@ -204,13 +202,12 @@ console.log(filename.split('.').pop());
 // Problem #15:
 // Write a JavaScript program to get the difference between a given number and 13, if the number is broader than 13 return double the absolute difference.
 
-function difference(n)
- {
+function difference(n) {
     if (n <= 13)
         return 13 - n;
     else
         return (n - 13) * 2;
- }
+}
 console.log(difference(32))
 console.log(difference(11))
 
@@ -219,17 +216,16 @@ console.log(difference(11))
 // Problem #16:
 //  Write a JavaScript program to compute the sum of the two given integers. If the two values are the same, then return triple their sum. 
 
-function sumTriple (x, y) {
+function sumTriple(x, y) {
     if (x == y) {
-      return 3 * (x + y);
-      } 
-     else
-     {
-      return (x + y);
-     }
-   }
-  console.log(sumTriple(10, 20));
-  console.log(sumTriple(10, 10));
+        return 3 * (x + y);
+    }
+    else {
+        return (x + y);
+    }
+}
+console.log(sumTriple(10, 20));
+console.log(sumTriple(10, 10));
 
 
 
@@ -239,17 +235,16 @@ function sumTriple (x, y) {
 
 function diff_num(n) {
     if (n <= 19) {
-      return (19 - n);
-      }
-    else
-      {
-       return (n - 19) * 3;
-      }
-  }
-  
-  console.log(diff_num(12));
-  console.log(diff_num(19));
-  console.log(diff_num(22));
+        return (19 - n);
+    }
+    else {
+        return (n - 19) * 3;
+    }
+}
+
+console.log(diff_num(12));
+console.log(diff_num(19));
+console.log(diff_num(22));
 
 
 
@@ -257,7 +252,14 @@ function diff_num(n) {
 
 
 // Problem #18:
-// Write a JavaScript exercise to create a variable using a user-defined name.
+//  Write a JavaScript program to check a pair of numbers and return true if one of the numbers is 50 or if their sum is 50.
+function test50(x, y) {
+    return ((x == 50 || y == 50) || (x + y == 50));
+}
+console.log(test50(50, 50))
+console.log(test50(20, 50))
+console.log(test50(20, 20))
+console.log(test50(20, 30))
 
 
 
