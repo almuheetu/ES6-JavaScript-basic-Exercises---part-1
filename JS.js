@@ -279,3 +279,57 @@ function testhundred(x) {
   console.log(testhundred(200));
 
 
+
+// Problem #20:
+// Write a JavaScript program to check two given integers whether one is positive and another one is negative. 
+
+function positive_negative(x, y)
+{
+  if ((x < 0 && y > 0) || x > 0 && y < 0) 
+  {
+    return true;
+  }
+  else 
+  {
+    return false;
+  }
+}
+console.log(positive_negative(2, 2));
+console.log(positive_negative(-2, 2));
+console.log(positive_negative(2, -2));
+console.log(positive_negative(-2, -2));
+
+
+
+
+
+
+
+
+
+// Problem #19:
+// Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.
+
+// Problem #19:
+// Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.
+
+
+// Problem #19:
+// Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.
+
+
+// Problem #19:
+// Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.
+
+// Problem #19:
+// Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.
+
+
+// Problem #19:
+// Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.
+
+// Problem #19:
+// Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.
+
+// Problem #19:
+// Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.
