@@ -356,7 +356,17 @@ console.log(first_last('abc'));
 
 
 // Problem #24:
-// Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.
+// Write a JavaScript program to create another string from a given string with the first character of the given string added to the front and back
+
+function front_back(str)
+{
+  first = str.substring(0,1);
+  return first + str + first;
+}
+console.log(front_back('a'));
+console.log(front_back('ab'));
+console.log(front_back('abc'));
+
 
 // Problem #25:
 // Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.
