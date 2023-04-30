@@ -369,7 +369,24 @@ console.log(front_back('abc'));
 
 
 // Problem #25:
-// Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.
+//  Write a JavaScript program to check whether a given positive number is a multiple of 3 or 7.
+
+function test37(x) 
+{
+  if (x % 3 == 0 || x % 7 == 0) 
+  {
+    return true;
+  } 
+  else {
+    return false;
+  }
+}
+
+console.log(test37(12));
+console.log(test37(14));
+console.log(test37(10));
+console.log(test37(11));
+
 
 
 // Problem #26:
