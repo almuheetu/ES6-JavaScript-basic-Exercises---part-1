@@ -321,26 +321,38 @@ function string_check(str1) {
   console.log(string_check("Python"));
   console.log(string_check("thon"));
   
-// Problem #19:
+// Problem #22:
+// Write a JavaScript program to remove a character at the specified position in a given string and return the modified string.
+
+function remove_character(str, char_pos) 
+ {
+  part1 = str.substring(0, char_pos);
+  part2 = str.substring(char_pos + 1, str.length);
+  return (part1 + part2);
+ }
+
+console.log(remove_character("Python",0));
+console.log(remove_character("Python",3));
+console.log(remove_character("Python",5));
+
+
+
+// Problem #23:
 // Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.
 
 
-// Problem #19:
+// Problem #24:
+// Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.
+
+// Problem #25:
 // Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.
 
 
-// Problem #19:
+// Problem #26:
 // Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.
 
-// Problem #19:
+// Problem #27:
 // Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.
 
-
-// Problem #19:
-// Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.
-
-// Problem #19:
-// Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.
-
-// Problem #19:
+// Problem #28:
 // Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.
