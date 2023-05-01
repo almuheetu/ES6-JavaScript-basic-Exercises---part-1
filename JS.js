@@ -453,13 +453,33 @@ console.log(check_three_nums(65, 9, 199));
 
 
 
-// Problem #27:
+// Problem #30:
+// Write a JavaScript program to check whether a string "Script" appears at the 5th (index 4) position in a given string. If "Script" appears in the string, return the string without "Script" otherwise return the original one.
+
+function check_script(str)
+{
+  if (str.length < 6) {
+    return str;
+  }
+  let result_str = str;
+    
+  if (str.substring(10, 4) == 'Script') 
+    {
+    
+   result_str = str.substring(0, 4) + str.substring(10,str.length);
+      
+  }
+  return result_str;
+}
+
+console.log(check_script("JavaScript"));
+console.log(check_script("CoffeeScript"));
+
+
+
+// Problem #31:
 // Write a JavaScript program to check whether a string starts with 'Java' if it does not otherwise.
 
 
-// Problem #27:
-// Write a JavaScript program to check whether a string starts with 'Java' if it does not otherwise.
-
-
-// Problem #27:
+// Problem #32:
 // Write a JavaScript program to check whether a string starts with 'Java' if it does not otherwise.
