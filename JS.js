@@ -400,7 +400,26 @@ console.log(front_back3("abcd"));
 
 
 // Problem #27:
-// Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.
+// Write a JavaScript program to check whether a string starts with 'Java' if it does not otherwise.
+
+function start_spec_str(str) {
+    if (str.length < 4) {
+        return false;
+    }
+    front = str.substring(0, 4);
+    if (front == 'Java') {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+console.log(start_spec_str("JavaScript"));
+console.log(start_spec_str("Java"));
+console.log(start_spec_str("Python"));
+
 
 // Problem #28:
-// Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.
+// Write a JavaScript program to check whether two given integer values are in the range 50..99 (inclusive). Return true if either of them falls within the range
+
