@@ -269,30 +269,27 @@ console.log(test50(20, 30))
 
 function testhundred(x) {
     return ((Math.abs(100 - x) <= 20) ||
-       (Math.abs(400 - x) <= 20));
-  }
-  
-  console.log(testhundred(10));
-  console.log(testhundred(90));
-  console.log(testhundred(99));
-  console.log(testhundred(199));
-  console.log(testhundred(200));
+        (Math.abs(400 - x) <= 20));
+}
+
+console.log(testhundred(10));
+console.log(testhundred(90));
+console.log(testhundred(99));
+console.log(testhundred(199));
+console.log(testhundred(200));
 
 
 
 // Problem #20:
 // Write a JavaScript program to check two given integers whether one is positive and another one is negative. 
 
-function positive_negative(x, y)
-{
-  if ((x < 0 && y > 0) || x > 0 && y < 0) 
-  {
-    return true;
-  }
-  else 
-  {
-    return false;
-  }
+function positive_negative(x, y) {
+    if ((x < 0 && y > 0) || x > 0 && y < 0) {
+        return true;
+    }
+    else {
+        return false;
+    }
 }
 console.log(positive_negative(2, 2));
 console.log(positive_negative(-2, 2));
@@ -311,43 +308,39 @@ console.log(positive_negative(-2, -2));
 // Write a JavaScript program to create another string by adding "Py" in front of a given string. If the given string begins with "Py" return the original string
 
 function string_check(str1) {
-    if (str1 === null || str1 === undefined || str1.substring(0, 2) === 'Py') 
-    {
-      return str1;
+    if (str1 === null || str1 === undefined || str1.substring(0, 2) === 'Py') {
+        return str1;
     }
-    return "Py"+str1;
-  }
-  
-  console.log(string_check("Python"));
-  console.log(string_check("thon"));
-  
+    return "Py" + str1;
+}
+
+console.log(string_check("Python"));
+console.log(string_check("thon"));
+
 // Problem #22:
 // Write a JavaScript program to remove a character at the specified position in a given string and return the modified string.
 
-function remove_character(str, char_pos) 
- {
-  part1 = str.substring(0, char_pos);
-  part2 = str.substring(char_pos + 1, str.length);
-  return (part1 + part2);
- }
+function remove_character(str, char_pos) {
+    part1 = str.substring(0, char_pos);
+    part2 = str.substring(char_pos + 1, str.length);
+    return (part1 + part2);
+}
 
-console.log(remove_character("Python",0));
-console.log(remove_character("Python",3));
-console.log(remove_character("Python",5));
+console.log(remove_character("Python", 0));
+console.log(remove_character("Python", 3));
+console.log(remove_character("Python", 5));
 
 
 
 // Problem #23:
 //  Write a JavaScript program to create a new string from a given string by changing the position of the first and last characters. The string length must be broader than or equal to 1
 
-function first_last(str1) 
-  {
-  if (str1.length <= 1)
-  {
-    return str1;
-  }
-  mid_char = str1.substring(1, str1.length - 1);
-  return (str1.charAt(str1.length - 1)) + mid_char + str1.charAt(0);
+function first_last(str1) {
+    if (str1.length <= 1) {
+        return str1;
+    }
+    mid_char = str1.substring(1, str1.length - 1);
+    return (str1.charAt(str1.length - 1)) + mid_char + str1.charAt(0);
 }
 console.log(first_last('a'));
 console.log(first_last('ab'));
@@ -358,10 +351,9 @@ console.log(first_last('abc'));
 // Problem #24:
 // Write a JavaScript program to create another string from a given string with the first character of the given string added to the front and back
 
-function front_back(str)
-{
-  first = str.substring(0,1);
-  return first + str + first;
+function front_back(str) {
+    first = str.substring(0, 1);
+    return first + str + first;
 }
 console.log(front_back('a'));
 console.log(front_back('ab'));
@@ -371,15 +363,13 @@ console.log(front_back('abc'));
 // Problem #25:
 //  Write a JavaScript program to check whether a given positive number is a multiple of 3 or 7.
 
-function test37(x) 
-{
-  if (x % 3 == 0 || x % 7 == 0) 
-  {
-    return true;
-  } 
-  else {
-    return false;
-  }
+function test37(x) {
+    if (x % 3 == 0 || x % 7 == 0) {
+        return true;
+    }
+    else {
+        return false;
+    }
 }
 
 console.log(test37(12));
@@ -390,7 +380,24 @@ console.log(test37(11));
 
 
 // Problem #26:
-// Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.
+// Write a JavaScript program to create a string from a given string. This is done by taking the last 3 characters and adding them at both the front and back. The string length must be 3 or more.
+
+function front_back3(str) {
+    if (str.length >= 3) {
+        str_len = 3;
+
+        back = str.substring(str.length - 3);
+        return back + str + back;
+    }
+    else
+        return false;
+}
+console.log(front_back3("abc"));
+console.log(front_back3("ab"));
+console.log(front_back3("abcd"));
+
+
+
 
 // Problem #27:
 // Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.
