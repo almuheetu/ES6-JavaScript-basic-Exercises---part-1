@@ -519,3 +519,50 @@ function near_100(x, y) {
 console.log(near_100(90, 89));
 console.log(near_100(-90, -89));
 console.log(near_100(90, 90));
+
+
+// Problem #33:
+// Write a JavaScript program to check whether two numbers are in the range 40..60 or 70..100 inclusive.
+
+function numbers_ranges(x, y) {
+    if ((x >= 40 && x <= 60 && y >= 40 && y <= 60)
+        ||
+        (x >= 70 && x <= 100 && y >= 70 && y <= 100)) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+console.log(numbers_ranges(44, 56));
+console.log(numbers_ranges(70, 95));
+console.log(numbers_ranges(50, 89));
+
+
+
+
+
+// Problem #34:
+// Write a JavaScript program to find the closest value to 100 from two numerical values
+
+
+
+// Problem #35:
+// Write a JavaScript program to find the closest value to 100 from two numerical values
+
+
+// Problem #36:
+// Write a JavaScript program to find the closest value to 100 from two numerical values
+
+
+
+
+// Problem #37:
+// Write a JavaScript program to find the closest value to 100 from two numerical values
+
+
+
+
+// Problem #38:
+// Write a JavaScript program to find the closest value to 100 from two numerical values
