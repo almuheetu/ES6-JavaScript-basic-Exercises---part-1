@@ -438,9 +438,8 @@ console.log(check_numbers(15, 99));
 // Problem #29:
 // Write a JavaScript program to check whether three given integer values are in the range 50..99 (inclusive). Return true if one or more of them are in the specified range.
 
-function check_three_nums(x, y, z) 
-{
-  return (x >= 50 && x <= 99) || (y >= 50 && y <= 99) || (z >= 50 && z <= 99);
+function check_three_nums(x, y, z) {
+    return (x >= 50 && x <= 99) || (y >= 50 && y <= 99) || (z >= 50 && z <= 99);
 }
 
 console.log(check_three_nums(50, 90, 99));
@@ -456,20 +455,18 @@ console.log(check_three_nums(65, 9, 199));
 // Problem #30:
 // Write a JavaScript program to check whether a string "Script" appears at the 5th (index 4) position in a given string. If "Script" appears in the string, return the string without "Script" otherwise return the original one.
 
-function check_script(str)
-{
-  if (str.length < 6) {
-    return str;
-  }
-  let result_str = str;
-    
-  if (str.substring(10, 4) == 'Script') 
-    {
-    
-   result_str = str.substring(0, 4) + str.substring(10,str.length);
-      
-  }
-  return result_str;
+function check_script(str) {
+    if (str.length < 6) {
+        return str;
+    }
+    let result_str = str;
+
+    if (str.substring(10, 4) == 'Script') {
+
+        result_str = str.substring(0, 4) + str.substring(10, str.length);
+
+    }
+    return result_str;
 }
 
 console.log(check_script("JavaScript"));
@@ -480,28 +477,45 @@ console.log(check_script("CoffeeScript"));
 // Problem #31:
 // Write a JavaScript program to find the largest of three given integers.
 
-function max_of_three(x, y, z) 
- {
-  max_val = 0;
-  if (x > y)
-  {
-    max_val = x;
-  } else
-  {
-    max_val = y;
-  }
-  if (z > max_val) 
-  {
-    max_val = z;
-  }
-  return max_val;
+function max_of_three(x, y, z) {
+    max_val = 0;
+    if (x > y) {
+        max_val = x;
+    } else {
+        max_val = y;
+    }
+    if (z > max_val) {
+        max_val = z;
+    }
+    return max_val;
 }
 
-console.log(max_of_three(1,0,1));
-console.log(max_of_three(0,-10,-20));
-console.log(max_of_three(1000,510,440));
+console.log(max_of_three(1, 0, 1));
+console.log(max_of_three(0, -10, -20));
+console.log(max_of_three(1000, 510, 440));
 
 
 
 // Problem #32:
-// Write a JavaScript program to check whether a string starts with 'Java' if it does not otherwise.
+// Write a JavaScript program to find the closest value to 100 from two numerical values
+
+function near_100(x, y) {
+    if (x != y) {
+        x1 = Math.abs(x - 100);
+        y1 = Math.abs(y - 100);
+
+        if (x1 < y1) {
+            return x;
+        }
+        if (y1 < x1) {
+            return y;
+        }
+        return 0;
+    }
+    else
+        return false;
+}
+
+console.log(near_100(90, 89));
+console.log(near_100(-90, -89));
+console.log(near_100(90, 90));
