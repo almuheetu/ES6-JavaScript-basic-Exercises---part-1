@@ -593,14 +593,12 @@ console.log(check_char("JavaScript", "S"));
 // Problem #36:
 // Write a JavaScript program that checks whether the last digit of three positive integers is the same.
 
-function last_digit(x, y, z)
-{
-  if ((x > 0) && y > 0 && z > 0)
-    {
-     return (x % 10 == y % 10 && y % 10 == z % 10 && x % 10 == z % 10);
-   }
-  else
-    return false;
+function last_digit(x, y, z) {
+    if ((x > 0) && y > 0 && z > 0) {
+        return (x % 10 == y % 10 && y % 10 == z % 10 && x % 10 == z % 10);
+    }
+    else
+        return false;
 }
 
 console.log(last_digit(20, 30, 400));
@@ -617,16 +615,16 @@ console.log(last_digit(20, 30, -400));
 
 function upper_lower(str) {
     if (str.length < 3) {
-      return str.toUpperCase();
+        return str.toUpperCase();
     }
     front_part = (str.substring(0, 3)).toLowerCase();
-    back_part = str.substring(3, str.length);  
+    back_part = str.substring(3, str.length);
     return front_part + back_part;
-  }
-  console.log(upper_lower("Python"));
-  console.log(upper_lower("Py"));
-  console.log(upper_lower("JAVAScript"));
-  
+}
+console.log(upper_lower("Python"));
+console.log(upper_lower("Py"));
+console.log(upper_lower("JAVAScript"));
+
 
 
 
@@ -634,13 +632,12 @@ function upper_lower(str) {
 // Problem #38:
 // Write a JavaScript program to check a student's total marks in various examinations. The student will get A+ grade if the total marks are in the range 89..100 inclusive, if the examination is "Final-exam" the student will receive A+ grade and total marks must be greater than or equal to 90. If the student gets an A+ grade, return true, otherwise return false.
 
-function exam_status(totmarks,is_exam)
-  {
-  if (is_exam) {
-    return totmarks >= 90;
-  }
- return (totmarks >= 89 && totmarks <= 100);
- }
+function exam_status(totmarks, is_exam) {
+    if (is_exam) {
+        return totmarks >= 90;
+    }
+    return (totmarks >= 89 && totmarks <= 100);
+}
 
 console.log(exam_status("78", " "));
 console.log(exam_status("89", "true "));
@@ -650,22 +647,39 @@ console.log(exam_status("99", "true "));
 // Problem #39:
 // Write a JavaScript program to compute the sum of the two given integers. If the sum is in the range 50..80 return 65 otherwise return 80
 
-function sortaSum(x, y) 
- {
-  const sum_nums = x + y;
-  if (sum_nums >= 50 && sum_nums <= 80) {
-    return 65;
-  }
-  return 80;
+function sortaSum(x, y) {
+    const sum_nums = x + y;
+    if (sum_nums >= 50 && sum_nums <= 80) {
+        return 65;
+    }
+    return 80;
 }
 
-console.log(sortaSum(30,20));
-console.log(sortaSum(90,80));
+console.log(sortaSum(30, 20));
+console.log(sortaSum(90, 80));
 
 
 
 // Problem #40:
-// Write a JavaScript program that checks whether the last digit of three positive integers is the same.
+// Write a JavaScript program to check from two given integers whether one of them is 8 or their sum or difference is 8.
+
+function check8(x, y) {
+    if (x == 8 || y == 8) {
+        return true;
+    }
+
+    if (x + y == 8 || Math.abs(x - y) == 8) {
+        return true;
+    }
+
+    return false;
+}
+
+console.log(check8(7, 8));
+console.log(check8(16, 8));
+console.log(check8(24, 32));
+console.log(check8(17, 18));
+
 
 
 
