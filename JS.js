@@ -645,3 +645,110 @@ function exam_status(totmarks,is_exam)
 console.log(exam_status("78", " "));
 console.log(exam_status("89", "true "));
 console.log(exam_status("99", "true "));
+
+
+// Problem #39:
+// Write a JavaScript program to compute the sum of the two given integers. If the sum is in the range 50..80 return 65 otherwise return 80
+
+function sortaSum(x, y) 
+ {
+  const sum_nums = x + y;
+  if (sum_nums >= 50 && sum_nums <= 80) {
+    return 65;
+  }
+  return 80;
+}
+
+console.log(sortaSum(30,20));
+console.log(sortaSum(90,80));
+
+
+
+// Problem #40:
+// Write a JavaScript program that checks whether the last digit of three positive integers is the same.
+
+
+
+// Problem #41:
+// Write a JavaScript program that checks whether the last digit of three positive integers is the same.
+
+
+
+
+// Problem #42:
+// Write a JavaScript program that checks whether the last digit of three positive integers is the same.
+
+
+
+
+
+// Problem #43:
+// Write a JavaScript program that checks whether the last digit of three positive integers is the same.
+
+
+
+// Problem #44:
+// Write a JavaScript program that checks whether the last digit of three positive integers is the same.
+
+
+
+
+// Problem #45:
+// Write a JavaScript program that checks whether the last digit of three positive integers is the same.
+
+
+
+
+
+
+// Problem #46:
+// Write a JavaScript program that checks whether the last digit of three positive integers is the same.
+
+
+
+
+
+// Problem #47:
+// Write a JavaScript program that checks whether the last digit of three positive integers is the same.
+
+
+
+
+
+// Problem #48:
+// Write a JavaScript program that checks whether the last digit of three positive integers is the same.
+
+
+
+
+
+// Problem #49:
+// Write a JavaScript program that checks whether the last digit of three positive integers is the same.
+
+
+
+
+
+
+// Problem #50:
+// Write a JavaScript program that checks whether the last digit of three positive integers is the same.
+
+
+
+
+
+// Problem #51:
+// Write a JavaScript program that checks whether the last digit of three positive integers is the same.
+
+
+
+
+
+// Problem #52:
+// Write a JavaScript program that checks whether the last digit of three positive integers is the same.
+
+
+
+
+// Problem #53:
+// Write a JavaScript program that checks whether the last digit of three positive integers is the same.
