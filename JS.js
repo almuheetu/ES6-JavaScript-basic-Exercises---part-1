@@ -706,7 +706,23 @@ function three_numbers(x, y, z) {
 
 
 // Problem #42:
-// Write a JavaScript program that checks whether the last digit of three positive integers is the same.
+// Write a JavaScript program to check whether three given numbers are increasing in strict or in soft mode.
+
+function number_order(x, y, z ) {
+    if ( y > x && z > y) 
+    {
+      return "strict mode";    
+    }
+    else if(z > y) 
+     return "Soft mode";
+    else
+      return "Undefinded";
+  }
+  
+  console.log(number_order(10,15,31));
+  console.log(number_order(24,22,31));
+  console.log(number_order(50,21,15));
+  
 
 
 
