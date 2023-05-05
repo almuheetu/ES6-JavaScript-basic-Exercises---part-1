@@ -684,7 +684,23 @@ console.log(check8(17, 18));
 
 
 // Problem #41:
-// Write a JavaScript program that checks whether the last digit of three positive integers is the same.
+// Write a JavaScript program to check a set of three numbers; if the three numbers are the same return 30; otherwise return 20; and if two numbers are the same return 40.
+
+function three_numbers(x, y, z) {
+    if (x == y && y == z) {
+      return 30;
+    }
+  
+    if (x == y || y == z || z == x) {
+      return 40;
+    }
+  
+    return 20;
+  }
+  console.log(three_numbers(8, 8, 8));
+  console.log(three_numbers(8, 8, 18));
+  console.log(three_numbers(8, 7, 18));
+  
 
 
 
