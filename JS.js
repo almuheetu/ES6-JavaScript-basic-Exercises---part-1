@@ -688,19 +688,19 @@ console.log(check8(17, 18));
 
 function three_numbers(x, y, z) {
     if (x == y && y == z) {
-      return 30;
+        return 30;
     }
-  
+
     if (x == y || y == z || z == x) {
-      return 40;
+        return 40;
     }
-  
+
     return 20;
-  }
-  console.log(three_numbers(8, 8, 8));
-  console.log(three_numbers(8, 8, 18));
-  console.log(three_numbers(8, 7, 18));
-  
+}
+console.log(three_numbers(8, 8, 8));
+console.log(three_numbers(8, 8, 18));
+console.log(three_numbers(8, 7, 18));
+
 
 
 
@@ -708,21 +708,20 @@ function three_numbers(x, y, z) {
 // Problem #42:
 // Write a JavaScript program to check whether three given numbers are increasing in strict or in soft mode.
 
-function number_order(x, y, z ) {
-    if ( y > x && z > y) 
-    {
-      return "strict mode";    
+function number_order(x, y, z) {
+    if (y > x && z > y) {
+        return "strict mode";
     }
-    else if(z > y) 
-     return "Soft mode";
+    else if (z > y)
+        return "Soft mode";
     else
-      return "Undefinded";
-  }
-  
-  console.log(number_order(10,15,31));
-  console.log(number_order(24,22,31));
-  console.log(number_order(50,21,15));
-  
+        return "Undefinded";
+}
+
+console.log(number_order(10, 15, 31));
+console.log(number_order(24, 22, 31));
+console.log(number_order(50, 21, 15));
+
 
 
 
@@ -733,14 +732,14 @@ function number_order(x, y, z ) {
 
 function same_last_digit(p, q, r) {
     return (p % 10 === q % 10) ||
-           (p % 10 === r % 10) ||
-           (q % 10 === r % 10);
-           
+        (p % 10 === r % 10) ||
+        (q % 10 === r % 10);
+
 }
 
-console.log(same_last_digit(22,32,42));
-console.log(same_last_digit(102,302,2));
-console.log(same_last_digit(20,22,45));
+console.log(same_last_digit(22, 32, 42));
+console.log(same_last_digit(102, 302, 2));
+console.log(same_last_digit(20, 22, 45));
 
 
 
@@ -749,11 +748,10 @@ console.log(same_last_digit(20,22,45));
 // Problem #44:
 //  Write a JavaScript program to check from three given integers whether a number is greater than or equal to 20. It is less than the others.
 
-function lessby20_others(x, y, z) 
-{
-return (x >= 20 && (x < y || x < z)) ||
-(y >= 20 && (y < x || y < z)) ||
-(z >= 20 && (z < y || z < x));
+function lessby20_others(x, y, z) {
+    return (x >= 20 && (x < y || x < z)) ||
+        (y >= 20 && (y < x || y < z)) ||
+        (z >= 20 && (z < y || z < x));
 }
 console.log(lessby20_others(23, 45, 10));
 console.log(lessby20_others(23, 23, 10));
@@ -785,7 +783,19 @@ console.log(test_number(9, 25));
 
 
 // Problem #46:
-// Write a JavaScript program that checks whether the last digit of three positive integers is the same.
+// Write a JavaScript program to check two given non-negative integers if one (not both) is a multiple of 7 or 11
+
+function valCheck(a, b) {
+    if (!((a % 7 == 0 || a % 11 == 0) && (b % 7 == 0 || b % 11 == 0))) {
+        return ((a % 7 == 0 || a % 11 == 0) || (b % 7 == 0 || b % 11 == 0));
+    }
+    else
+        return false;
+}
+console.log(valCheck(14, 21));
+console.log(valCheck(14, 20));
+console.log(valCheck(16, 20));
+
 
 
 
