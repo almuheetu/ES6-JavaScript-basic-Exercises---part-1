@@ -808,7 +808,6 @@ console.log(string_reverse("JavaScript"));
 // Problem #49:
 // Write a JavaScript program to replace every character in a given string with the character following it in the alphabet.
 
-function string_reverse(str)
 function LetterChanges(text) {
     //https://goo.gl/R8gn7u
     var s = text.split('');
@@ -840,6 +839,7 @@ console.log(LetterChanges("W3R"));
 console.log(LetterChanges("php"));
 
 
+
 // Problem #50:
 // Write a JavaScript program to capitalize the first letter of each word in a given string.
 
@@ -862,7 +862,18 @@ console.log(capital_letter("Write a JavaScript program to capitalize the first l
 
 
 // Problem #51:
-// Write a JavaScript program that checks whether the last digit of three positive integers is the same.
+// Write a JavaScript program to convert a given number into hours and minutes
+
+function time_convert(num) {
+    var hours = Math.floor(num / 60);
+    var minutes = num % 60;
+    return hours + ":" + minutes;
+}
+
+console.log(time_convert(71));
+console.log(time_convert(450));
+console.log(time_convert(1441));
+
 
 
 
