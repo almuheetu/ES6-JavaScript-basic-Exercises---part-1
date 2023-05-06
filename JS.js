@@ -681,8 +681,6 @@ console.log(check8(24, 32));
 console.log(check8(17, 18));
 
 
-
-
 // Problem #41:
 // Write a JavaScript program to check a set of three numbers; if the three numbers are the same return 30; otherwise return 20; and if two numbers are the same return 40.
 
@@ -700,10 +698,6 @@ function three_numbers(x, y, z) {
 console.log(three_numbers(8, 8, 8));
 console.log(three_numbers(8, 8, 18));
 console.log(three_numbers(8, 7, 18));
-
-
-
-
 
 // Problem #42:
 // Write a JavaScript program to check whether three given numbers are increasing in strict or in soft mode.
@@ -723,10 +717,6 @@ console.log(number_order(24, 22, 31));
 console.log(number_order(50, 21, 15));
 
 
-
-
-
-
 // Problem #43:
 // Write a JavaScript program to check from three given numbers (non negative integers) that two or all of them have the same rightmost digit
 
@@ -742,9 +732,6 @@ console.log(same_last_digit(102, 302, 2));
 console.log(same_last_digit(20, 22, 45));
 
 
-
-
-
 // Problem #44:
 //  Write a JavaScript program to check from three given integers whether a number is greater than or equal to 20. It is less than the others.
 
@@ -756,9 +743,6 @@ function lessby20_others(x, y, z) {
 console.log(lessby20_others(23, 45, 10));
 console.log(lessby20_others(23, 23, 10));
 console.log(lessby20_others(21, 66, 75));
-
-
-
 
 
 // Problem #45:
@@ -778,10 +762,6 @@ console.log(test_number(9, 25));
 
 
 
-
-
-
-
 // Problem #46:
 // Write a JavaScript program to check two given non-negative integers if one (not both) is a multiple of 7 or 11
 
@@ -797,38 +777,27 @@ console.log(valCheck(14, 20));
 console.log(valCheck(16, 20));
 
 
-
-
-
-
 // Problem #47:
 // Write a JavaScript program to check whether a given number exists in the range 40..10000
 
-function test_digit(x, y, n) 
-  {    
+function test_digit(x, y, n) {
     if (n < 40 || n > 10000)
-      return false;
-    else
-      if (n >= x && n <= y)
-        return true;
-      else
         return false;
-  }
-console.log(test_digit(40, 4000, 45));  
-console.log(test_digit(80, 320, 79));  
+    else
+        if (n >= x && n <= y)
+            return true;
+        else
+            return false;
+}
+console.log(test_digit(40, 4000, 45));
+console.log(test_digit(80, 320, 79));
 console.log(test_digit(89, 4000, 30));
-
-
-
-
-
 
 
 // Problem #48:
 // Write a JavaScript program to reverse a given string.
 
-function string_reverse(str) 
-{
+function string_reverse(str) {
     return str.split("").reverse().join("");
 }
 
@@ -836,20 +805,39 @@ console.log(string_reverse("w3resource"));
 console.log(string_reverse("www"));
 console.log(string_reverse("JavaScript"));
 
-
-
-
-
-
-
 // Problem #49:
 // Write a JavaScript program to replace every character in a given string with the character following it in the alphabet.
 
+function string_reverse(str)
+function LetterChanges(text) {
+    //https://goo.gl/R8gn7u
+    var s = text.split('');
+    for (var i = 0; i < s.length; i++) {
+        // Caesar cipher
+        switch (s[i]) {
+            case ' ':
+                break;
+            case 'z':
+                s[i] = 'a';
+                break;
+            case 'Z':
+                s[i] = 'A';
+                break;
+            default:
+                s[i] = String.fromCharCode(1 + s[i].charCodeAt(0));
+        }
 
-
-
-
-
+        // Upper-case vowels
+        switch (s[i]) {
+            case 'a': case 'e': case 'i': case 'o': case 'u':
+                s[i] = s[i].toUpperCase();
+        }
+    }
+    return s.join('');
+}
+console.log(LetterChanges("PYTHON"));
+console.log(LetterChanges("W3R"));
+console.log(LetterChanges("php"));
 
 
 // Problem #50:
