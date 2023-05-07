@@ -880,7 +880,18 @@ console.log(time_convert(1441));
 
 
 // Problem #52:
-// Write a JavaScript program that checks whether the last digit of three positive integers is the same.
+// Write a JavaScript program to convert letters of a given string alphabetically.
+
+function alphabet_Soup(str) {
+
+    return str.split("").sort().join("");
+
+}
+
+console.log(alphabet_Soup("Python"));
+
+console.log(alphabet_Soup("Exercises"));
+
 
 
 
