@@ -908,3 +908,56 @@ console.log(ab_Check("Chainsbreak"));
 console.log(ab_Check("pane borrowed"));
 console.log(ab_Check("abCheck"));
 
+// Problem #54:
+// Write a JavaScript program to count the number of vowels in a given string
+
+function vowel_Count(str)
+{ 
+
+  return str.replace(/[^aeiou]/g, "").length; 
+}
+
+console.log(vowel_Count("Python"));
+console.log(vowel_Count("w3resource.com"));
+
+
+
+
+// Problem #55:
+// Write a JavaScript program to convert letters of a given string alphabetically.
+
+
+
+// Problem #56:
+// Write a JavaScript program to convert letters of a given string alphabetically.
+
+
+
+
+// Problem #57:
+// Write a JavaScript program to convert letters of a given string alphabetically.
+
+
+
+
+
+// Problem #58:
+// Write a JavaScript program to convert letters of a given string alphabetically.
+
+
+
+
+// Problem #59:
+// Write a JavaScript program to convert letters of a given string alphabetically.
+
+
+
+
+
+// Problem #60:
+// Write a JavaScript program to convert letters of a given string alphabetically.
+
+
+
+// Problem #61:
+// Write a JavaScript program to convert letters of a given string alphabetically.
