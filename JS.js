@@ -899,10 +899,9 @@ console.log(alphabet_Soup("Exercises"));
 // Problem #53:
 // Write a JavaScript program to check whether the characters a and b are separated by exactly 3 places anywhere (at least once) in a given string.
 
-function ab_Check(str)
- {
+function ab_Check(str) {
     return (/a...b/).test(str) || (/b...a/).test(str);
- }
+}
 
 console.log(ab_Check("Chainsbreak"));
 console.log(ab_Check("pane borrowed"));
@@ -911,10 +910,9 @@ console.log(ab_Check("abCheck"));
 // Problem #54:
 // Write a JavaScript program to count the number of vowels in a given string
 
-function vowel_Count(str)
-{ 
+function vowel_Count(str) {
 
-  return str.replace(/[^aeiou]/g, "").length; 
+    return str.replace(/[^aeiou]/g, "").length;
 }
 
 console.log(vowel_Count("Python"));
@@ -926,17 +924,16 @@ console.log(vowel_Count("w3resource.com"));
 // Problem #55:
 // Write a JavaScript program to check whether a given string contains an equal number of p's and t's
 
-function equal_pt(str)
-{ 
-  var str_p = str.replace(/[^p]/g, "");
+function equal_pt(str) {
+    var str_p = str.replace(/[^p]/g, "");
 
-  var str_t = str.replace(/[^t]/g, "");
+    var str_t = str.replace(/[^t]/g, "");
 
-  var p_num = str_p.length;
-  var s_num = str_t.length;
+    var p_num = str_p.length;
+    var s_num = str_t.length;
 
-  return p_num === s_num;
-         
+    return p_num === s_num;
+
 }
 console.log(equal_pt("paatpss"));
 console.log(equal_pt("paatps"));
@@ -945,8 +942,21 @@ console.log(equal_pt("paatps"));
 
 
 // Problem #56:
-// Write a JavaScript program to convert letters of a given string alphabetically.
+// Write a JavaScript program to divide two positive numbers and return the result as string with properly formatted commas
 
+n1 = 80;
+n2 = 6;
+
+var div = Math.round(n1 / n2).toString(),
+    result_array = div.split("");
+
+if (div >= 1000) {
+    for (var i = div.length - 3; i > 0; i -= 3) {
+        result_array.splice(i, 0, ",");
+    }
+    result_array;
+}
+console.log(result_array);
 
 
 
