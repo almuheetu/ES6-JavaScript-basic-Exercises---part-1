@@ -961,20 +961,53 @@ console.log(result_array);
 
 
 // Problem #57:
-// Write a JavaScript program to convert letters of a given string alphabetically.
+// Write a JavaScript program to create one string of specified copies (positive numbers) of a given string.
+
+function string_copies(str, n) {
+    if (n < 0)
+        return false;
+    else
+        return str.repeat(n);
+}
+console.log(string_copies("abc", 5));
+console.log(string_copies("abc", 0));
+console.log(string_copies("abc", -2));
 
 
 
 
 
 // Problem #58:
-// Write a JavaScript program to convert letters of a given string alphabetically.
+//  Write a JavaScript program to create an updated string of 4 copies of the last 3 characters of a given original string. The string length must be 3 and above
+
+function newstring(str) {
+    if (str.length >= 3) {
+        result_str = str.substring(str.length - 3);
+        return result_str + result_str + result_str + result_str;
+    }
+    else
+        return false;
+}
+console.log(newstring("Python 3.0"));
+console.log(newstring("JS"));
+console.log(newstring("JavaScript"));
+
 
 
 
 
 // Problem #59:
-// Write a JavaScript program to convert letters of a given string alphabetically.
+// Write a JavaScript program to extract the first half of a even string.
+function first_half (str) {
+    if (str.length % 2 == 0) {
+      return str.slice(0, str.length / 2);
+    }
+    return str;
+  }
+  console.log(first_half("Python"));  
+  console.log(first_half("JavaScript")); 
+  console.log(first_half("PHP"));
+  
 
 
 
