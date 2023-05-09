@@ -839,7 +839,6 @@ console.log(LetterChanges("W3R"));
 console.log(LetterChanges("php"));
 
 
-
 // Problem #50:
 // Write a JavaScript program to capitalize the first letter of each word in a given string.
 
@@ -858,9 +857,6 @@ console.log(capital_letter("Write a JavaScript program to capitalize the first l
 
 
 
-
-
-
 // Problem #51:
 // Write a JavaScript program to convert a given number into hours and minutes
 
@@ -876,9 +872,6 @@ console.log(time_convert(1441));
 
 
 
-
-
-
 // Problem #52:
 // Write a JavaScript program to convert letters of a given string alphabetically.
 
@@ -891,8 +884,6 @@ function alphabet_Soup(str) {
 console.log(alphabet_Soup("Python"));
 
 console.log(alphabet_Soup("Exercises"));
-
-
 
 
 
@@ -917,8 +908,6 @@ function vowel_Count(str) {
 
 console.log(vowel_Count("Python"));
 console.log(vowel_Count("w3resource.com"));
-
-
 
 
 // Problem #55:
@@ -974,9 +963,6 @@ console.log(string_copies("abc", 0));
 console.log(string_copies("abc", -2));
 
 
-
-
-
 // Problem #58:
 //  Write a JavaScript program to create an updated string of 4 copies of the last 3 characters of a given original string. The string length must be 3 and above
 
@@ -994,23 +980,17 @@ console.log(newstring("JavaScript"));
 
 
 
-
-
 // Problem #59:
 // Write a JavaScript program to extract the first half of a even string.
-function first_half (str) {
+function first_half(str) {
     if (str.length % 2 == 0) {
-      return str.slice(0, str.length / 2);
+        return str.slice(0, str.length / 2);
     }
     return str;
-  }
-  console.log(first_half("Python"));  
-  console.log(first_half("JavaScript")); 
-  console.log(first_half("PHP"));
-  
-
-
-
+}
+console.log(first_half("Python"));
+console.log(first_half("JavaScript"));
+console.log(first_half("PHP"));
 
 
 // Problem #60:
@@ -1018,13 +998,61 @@ function first_half (str) {
 
 function without_first_end(str) {
     return str.substring(1, str.length - 1);
+}
+console.log(without_first_end('JavaScript'));
+console.log(without_first_end('JS'));
+console.log(without_first_end('PHP'));
+
+// Problem #61:
+// Write a JavaScript program to concatenate two strings except for their first character. 
+
+function concatenate(str1, str2) {
+    str1 = str1.substring(1, str1.length);
+    str2 = str2.substring(1, str2.length);
+    return str1 + str2;
   }
-  console.log(without_first_end('JavaScript'));
-  console.log(without_first_end('JS'));
-  console.log(without_first_end('PHP'));
+  
+  console.log(concatenate("PHP","JS"));
+  console.log(concatenate("A","B"));
+  console.log(concatenate("AA","BB"));
   
 
 
+// Problem #62:
+// Write a JavaScript program to convert letters of a given string alphabetically.
 
-// Problem #61:
+
+// Problem #63:
+// Write a JavaScript program to convert letters of a given string alphabetically.
+
+
+// Problem #64:
+// Write a JavaScript program to convert letters of a given string alphabetically.
+
+
+// Problem #65:
+// Write a JavaScript program to convert letters of a given string alphabetically.
+
+
+// Problem #66:
+// Write a JavaScript program to convert letters of a given string alphabetically.
+
+
+// Problem #67:
+// Write a JavaScript program to convert letters of a given string alphabetically.
+
+
+// Problem #68:
+// Write a JavaScript program to convert letters of a given string alphabetically.
+
+
+// Problem #69:
+// Write a JavaScript program to convert letters of a given string alphabetically.
+
+
+// Problem #70:
+// Write a JavaScript program to convert letters of a given string alphabetically.
+
+
+// Problem #71:
 // Write a JavaScript program to convert letters of a given string alphabetically.
