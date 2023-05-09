@@ -1010,23 +1010,22 @@ function concatenate(str1, str2) {
     str1 = str1.substring(1, str1.length);
     str2 = str2.substring(1, str2.length);
     return str1 + str2;
-  }
-  
-  console.log(concatenate("PHP","JS"));
-  console.log(concatenate("A","B"));
-  console.log(concatenate("AA","BB"));
-  
+}
+
+console.log(concatenate("PHP", "JS"));
+console.log(concatenate("A", "B"));
+console.log(concatenate("AA", "BB"));
+
 
 
 // Problem #62:
 // Write a JavaScript program to move the last three characters to the start of a given string. The string length must be greater than or equal to three. 
 
 function right_three(str) {
-    if (str.length > 1)
-      {
+    if (str.length > 1) {
         return str.slice(-3) + str.slice(0, -3);
-      }
- return str;
+    }
+    return str;
 }
 console.log(right_three("Python"));
 console.log(right_three("JavaScript"));
@@ -1038,23 +1037,33 @@ console.log(right_three("Hi"));
 // Write a JavaScript program to create a string using the middle three characters of a given string of odd length. The string length must be greater than or equal to three.
 
 function middle_three(str) {
-    if (str.length % 2!= 0) {
-    
-     mid = (str.length + 1)/2;
-     return str.slice(mid - 2, mid + 1);
-     }
-   return str;
- }
- console.log(middle_three('abcdefg'));
- console.log(middle_three('HTML5'));
- console.log(middle_three('Python'));
- console.log(middle_three('PHP'));
- console.log(middle_three('Exercises'));
- 
+    if (str.length % 2 != 0) {
+
+        mid = (str.length + 1) / 2;
+        return str.slice(mid - 2, mid + 1);
+    }
+    return str;
+}
+console.log(middle_three('abcdefg'));
+console.log(middle_three('HTML5'));
+console.log(middle_three('Python'));
+console.log(middle_three('PHP'));
+console.log(middle_three('Exercises'));
+
 
 
 // Problem #64:
-// Write a JavaScript program to convert letters of a given string alphabetically.
+//  Write a JavaScript program to concatenate two strings and return the result. If the length of the strings does not match, then remove the characters from the longer string.
+function str_con_cat(str1, str2) {
+    const m = Math.min(str1.length, str2.length);
+
+    return str1.substring(str1.length - m) + str2.substring(str2.length - m);
+}
+
+console.log(str_con_cat("Python", "JS"));
+console.log(str_con_cat("ab", "cdef"));
+
+
 
 
 // Problem #65:
