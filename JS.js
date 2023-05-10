@@ -1022,8 +1022,8 @@ console.log(concatenate("AA", "BB"));
 // Write a JavaScript program to move the last three characters to the start of a given string. The string length must be greater than or equal to three. 
 
 function right_three(str) {
-    if (str.length > 1) {
-        return str.slice(-3) + str.slice(0, -3);
+    if (str.length >= 3) {
+        return str.slice(-3) + str.slice(0, str.length);
     }
     return str;
 }
@@ -1070,23 +1070,36 @@ console.log(str_con_cat("ab", "cdef"));
 // Write a JavaScript program to test whether a string ends with "Script". The string length must be greater than or equal to 6. 
 
 function end_script(str) {
-    if (str.substring(str.length - 6, str.length) == 'Script') 
-    {
-      return true;
-    } 
-    else 
-    {
-      return false;
+    if (str.substring(str.length - 6, str.length) == 'Script') {
+        return true;
     }
-  }
-  console.log(end_script("JavaScript"));
-  console.log(end_script("Java Script"));
-  console.log(end_script("Java Scripts"));
-  
+    else {
+        return false;
+    }
+}
+console.log(end_script("JavaScript"));
+console.log(end_script("Java Script"));
+console.log(end_script("Java Scripts"));
+
 
 
 // Problem #66:
-// Write a JavaScript program to convert letters of a given string alphabetically.
+// Write a JavaScript program to display the city name if the string begins with "Los" or "New" otherwise return blank.
+
+function city_name(str) {
+    if (str.length >= 3 && ((str.substring(0, 3) == 'Los')
+        || (str.substring(0, 3) == 'New'))) 
+    {
+        return str;
+    }
+
+    return '';
+}
+
+console.log(city_name("New York"));
+console.log(city_name("Los Angeles"));
+console.log(city_name("London"));
+
 
 
 // Problem #67:
