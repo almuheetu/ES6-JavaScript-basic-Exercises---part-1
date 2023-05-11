@@ -1088,8 +1088,7 @@ console.log(end_script("Java Scripts"));
 
 function city_name(str) {
     if (str.length >= 3 && ((str.substring(0, 3) == 'Los')
-        || (str.substring(0, 3) == 'New'))) 
-    {
+        || (str.substring(0, 3) == 'New'))) {
         return str;
     }
 
@@ -1108,35 +1107,32 @@ console.log(city_name("London"));
 function nop(str) {
     let start_pos = 0;
     let end_pos = str.length;
-  
-    if (str.length > 0 && str.charAt(0) == 'P') 
-      { 
-        start_pos = 1; 
-      }
-  
-    if (str.length > 1 && str.charAt(str.length - 1) == 'P') 
-    {
-      end_pos--;
+
+    if (str.length > 0 && str.charAt(0) == 'P') {
+        start_pos = 1;
     }
-  
+
+    if (str.length > 1 && str.charAt(str.length - 1) == 'P') {
+        end_pos--;
+    }
+
     return str.substring(start_pos, end_pos);
-  }
-  
-  console.log(nop("PythonP"));
-  console.log(nop("Python"));
-  console.log(nop("JavaScript"));
-  
+}
+
+console.log(nop("PythonP"));
+console.log(nop("Python"));
+console.log(nop("JavaScript"));
+
 
 
 // Problem #68:
 // Write a JavaScript program to create a new string using the first and last n characters from a given string. The string length must be larger than or equal to n.
 
-function two_string(str, n)
-  {
+function two_string(str, n) {
     first_part = str.substring(0, n);
     last_part = str.substring(str.length - n);
     return first_part + last_part;
- }
+}
 
 console.log(two_string("JavaScript", 2));
 console.log(two_string("JavaScript", 3));
@@ -1146,13 +1142,12 @@ console.log(two_string("JavaScript", 3));
 // Problem #69:
 // Write a JavaScript program to compute the sum of three elements of a given array of integers of length 3.
 
-function sum_three(nums)
-{
-  return nums[0] + nums[1] + nums[2];
+function sum_three(nums) {
+    return nums[0] + nums[1] + nums[2];
 }
 
-console.log(sum_three([10, 32, 20]));  
-console.log(sum_three([5, 7, 9])); 
+console.log(sum_three([10, 32, 20]));
+console.log(sum_three([5, 7, 9]));
 console.log(sum_three([0, 8, -11]));
 
 
@@ -1160,15 +1155,44 @@ console.log(sum_three([0, 8, -11]));
 // Problem #70:
 // Write a JavaScript program to rotate the elements left in a given array of integers of length 3. 
 
-function rotate_elements_left(array)
-{
+function rotate_elements_left(array) {
     return [array[1], array[2], array[0]];
 }
-console.log(rotate_elements_left([3, 4, 5]));  
-console.log(rotate_elements_left([0, -1, 2]));  
-console.log(rotate_elements_left([7, 6, 5])); 
+console.log(rotate_elements_left([3, 4, 5]));
+console.log(rotate_elements_left([0, -1, 2]));
+console.log(rotate_elements_left([7, 6, 5]));
 
 
 
 // Problem #71:
-// Write a JavaScript program to convert letters of a given string alphabetically.
+// Write a JavaScript program to check whether 1 appears in the first or last position of a given array of integers. The array length must be larger than or equal to 1
+
+function first_last_1(nums) {
+    var end_pos = nums.length - 1;
+    return nums[0] == 1 || nums[end_pos] == 1;
+}
+
+
+console.log(first_last_1([1, 3, 5]));
+console.log(first_last_1([1, 3, 5, 1]));
+console.log(first_last_1([2, 4, 6]));
+
+
+// Problem #72:
+// JavaScript program to check whether 1 appears in first or last position of a given array of integers. The array length must be greater or equal to 1.
+
+
+// Problem #73:
+//
+// Problem #74:
+//
+// Problem #75:
+//
+// Problem #76:
+//
+// Problem #77:
+//
+// Problem #78:
+//
+// Problem #79:
+// 
