@@ -1179,7 +1179,20 @@ console.log(first_last_1([2, 4, 6]));
 
 
 // Problem #72:
-// JavaScript program to check whether 1 appears in first or last position of a given array of integers. The array length must be greater or equal to 1.
+// Write a JavaScript program to check whether the first and last elements are the same in a given array of integers of length 3. 
+
+function first_last_same(nums)
+   {
+    var end = nums.length - 1;
+    if (nums.length >= 1){
+       return nums[0] == nums[end];
+    } else {return false;}
+}
+
+console.log(first_last_same([10, 20, 30])); 
+console.log(first_last_same([10, 20, 30, 10])); 
+console.log(first_last_same([20, 20, 20])); 
+
 
 
 // Problem #73:
